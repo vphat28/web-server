@@ -6,6 +6,6 @@ var middleware = {
         console.log('Regquest: ' + new Date().toString() + ' ' + reg.method + ' ' + reg.originalUrl);
         next();
     }
-};
-
+}; 
+ 
 module.exports = middleware;
