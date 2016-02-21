@@ -1,5 +1,9 @@
 var express = require('express');
 var app = express();
+var PORT = 3000;
+var middleware = require('./middleware.js');
+
+app.use(middleware.logger);
 
 app.get('/', function(req, res) { 
     res.send('Hello NodeJs World');
